@@ -1,13 +1,13 @@
 import React, {useState, useEffect} from 'react';
 import CharacterCard from './characterCard.js'
 import axios from 'axios';
+import './StarWars.css'
 
 const CharacterInfo = () => {
   const [charData, setCharData] = useState('');
 
   useEffect(() => {
-      axios
-      .get('https://swapi.co/api/people/')
+      axios.get('https://swapi.co/api/people/1')
       .then (res => {
         let characters = res.data;
         console.log(characters);

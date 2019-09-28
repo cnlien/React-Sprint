@@ -1,0 +1,23 @@
+.charCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  width: 30%;
+  background: rgba(255, 255, 255, .5);
+  margin: 2% 0;
+  padding: 5% 0;
+  font-family: sans-serif;
+  border-radius: .5rem;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  text-transform: uppercase;
+  letter-spacing: .05rem;
+  font-weight: 100;
+}

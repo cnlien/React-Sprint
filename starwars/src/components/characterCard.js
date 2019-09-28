@@ -1,13 +1,17 @@
 import React from 'react';
-import { Toast, ToastBody, ToastHeader } from 'reactstrap';
+import './StarWars.css'
 
-const CharacterCard = (props) =>{
+const CharacterCard = (props) => {
   return (
-    <div className="p-3 m-2 rounded">
-      <Toast>
-        <ToastHeader>{props.name}</ToastHeader>
-        <ToastBody><p>{props.gender}| {props.height} | {props.mass}</p></ToastBody>
-      </Toast>
+    <div className="charCard">
+      <div className="cardHeader">
+        <h1>{props.name}</h1>
+      </div>
+
+      <div className="cardBody">
+        <p>{props.gender} | {props.height} cm | {props.mass} kg</p>
+      </div>
+
     </div>
   )
 }

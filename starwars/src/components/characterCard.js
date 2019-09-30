@@ -1,7 +1,7 @@
 import React from 'react';
 import './StarWars.css'
 
-const CharacterCard = (props) => {
+function CharacterCard (props) {
   return (
     <div className="charCard">
       <div className="cardHeader">
@@ -13,7 +13,7 @@ const CharacterCard = (props) => {
       </div>
 
     </div>
-  )
+  );
 }
 
 export default CharacterCard;
